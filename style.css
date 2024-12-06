@@ -1,0 +1,936 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* ----------------------------------------Home start-------------------------------------------------------- */
+.home
+{
+    min-height: 100vh;
+    width: 100%;
+    background-color: rgb(1, 1, 20);
+}
+.overall
+{
+    overflow: hidden;
+}
+/* ----------------------------------------navstart-------------------------------------------------------- */
+.R-img
+{
+    height: 80px;
+}
+.navbar 
+{
+    background-color: rgb(1, 1, 20) !important;
+    padding: 10px 60px 10px 60px ;
+        /* background-color: red !important; */
+}
+.navbar-collapse
+{
+    flex-grow: 0 !important;
+    justify-content: space-between !important;
+}
+.nav-link
+{
+    color: white !important;
+    padding-left: 40px !important;}
+.nav-link:hover
+{
+    color: orangered !important;
+     font-weight: bold;
+}
+/* ----------------------------------------About start-------------------------------------------------------- */
+.about
+{
+    min-height: 90vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    /* background-color:green; */
+}
+.about-content-box
+{
+    min-height:90vh;
+    width: 50%;
+    color: white;
+    padding-top: 50px;
+    /* border: 1px solid white; */
+}
+.full-stack
+{
+    min-height: 40px;
+    width: 100%;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    column-gap:10px ;
+    flex-wrap: wrap;
+    /* background-color: burlywood; */
+}
+.type-div
+{
+    height: 40px;
+    /* background-color: red; */
+}
+.type-writer
+{
+    /* background-image: linear-gradient(43deg,#4158D0 0%,#c850c0 46%,#ffcc70 100%); */
+    background-image: linear-gradient(43deg, yellow,green,rgb(27, 165, 165));
+    background-clip: text;
+    color: transparent;
+    font-weight: bold;
+    border-right: 1px solid white;
+    height: 40px;
+    width:34ch;
+    white-space: nowrap;
+    overflow: hidden;
+    animation: typing 3s steps(20),blink 0.3s  infinite alternate;
+    font-weight: bold;
+}
+.resume-btn
+{
+    height: 50px;
+    width: 200px;
+    border-radius: 10px;
+    margin-top: 60px;
+    border: none;
+    background-image: linear-gradient(to right,rgb(82, 9, 57) ,rgb(4, 4, 37));
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+}
+.resume-btn:hover
+{
+    border: 1px solid gray;
+    box-shadow: 0 0 5px gray;
+}
+.about-img-box
+{
+    height:90vh;
+    width: 40%;
+    display: flex;
+    justify-content:center;
+    align-items: start;
+    /* border: 1px solid red; */
+    /* box-shadow: 0 0 500px gray inset; */
+}
+.about-img-box img
+{
+    height: 500px;
+    width: 750px;
+    padding:20px;
+    filter: grayscale(100%);
+}
+.top-up
+{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    background-color:black;
+    border: 1px solid blueviolet;
+    position:fixed;
+    bottom: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+    animation-name: top-up;
+    transition: 1s;
+    animation-duration: 5s;
+    animation-fill-mode: forwards;
+}
+.top-up i
+{
+    font-size: 30px;
+ color:blueviolet;
+}
+
+/* ------------------------------------------Skill start----------------------------------------------------- */
+.skill-section
+{
+    min-height: 70vh;
+    width: 100%;
+    /* background-color:rgb(10, 16, 37) ; */
+    background-image: linear-gradient(to right,rgb(82, 9, 57) ,rgb(4, 4, 37));
+    color: white;
+    text-align: center;
+    padding-top: 20px;
+}
+.skill-overall-box
+{
+    min-height:50%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    /* background-color: red; */
+}
+.skill-box
+{
+    min-height:200px;
+    width: 45%;
+    border-radius: 10px;
+    background-color:rgb(5, 12, 31);
+    border:1px solid blueviolet;
+    box-shadow: 0 0 5px 1px blueviolet;
+    padding-top: 10px;
+}
+.frontend-skills
+{
+    min-height: 150px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    column-gap: 20px;
+    /* padding: 10px; */
+    /* background-color: yellow; */
+}
+.skill-items
+{
+    height: 35px;
+    min-width: 50px;
+    border: 2px solid gray;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-evenly;
+    font-size: 15px;
+    padding: 10px;
+    gap: 5px;
+}
+.skill-items img
+{
+    height: 20px;
+}
+.skill-items p
+{
+    padding-top: 15px;
+    font-weight: normal;
+}
+
+/* ---------------------------------------VISIONARY START--------------------------------------- */
+.vision-overall-box
+{
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(to right,rgb(82, 9, 57) ,rgb(4, 4, 37));
+    color: white;
+    text-align: center;
+    padding-top: 30px;
+}
+.visionary
+{
+    min-height: 450px;
+    width: 80%;
+    margin: auto;
+    position: relative;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    /* border: 1px solid white; */
+    /* gap: 20px; */
+}
+.vision-center-line-1
+{
+    min-height: 450px;
+    width: 50%;
+    border-right: 1px solid white;
+    display: flex;
+    justify-content: end;
+    align-items: start;
+    padding-right: 20px;
+}
+.vision-center-line-2
+{
+    min-height: 450px;
+    width: 50%;
+    border-left: 1px solid white;
+    display: flex;
+    justify-content:start;
+    align-items: end;
+    padding-left: 20px;
+}
+.vision-box
+{
+    min-height:200px;
+    width: 95%;
+    border-radius: 10px;
+    border: 2px solid blueviolet;
+    padding: 10px;
+    text-align: left;
+    position: relative;
+}
+.vision-box-1
+{
+    animation: vision-box-1 linear;
+    animation-timeline: view();
+    animation-range: entry cover;
+    animation-iteration-count: 1;
+
+}
+.vision-box-2
+{
+    animation-name: vision-box-2;
+}
+.vision-box-1::after
+{
+    content: '';
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    background-color: black;
+    position: absolute;
+    top: -5px;
+    right: -34px;
+    border: 3px solid mediumvioletred;
+    background-color:rgb(5, 5, 54); 
+    animation-name: pointball-1;
+    transition: 1s;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+.vision-box-2::before
+{
+    content: '';
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    background-color: black;
+    position: absolute;
+    bottom: -5px;
+    left: -33px;
+    border: 3px solid mediumvioletred;
+    background-color:rgb(5, 5, 54); 
+    animation-name: pointball-2;
+    transition: 1s;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+.vision-box h6
+{
+  color: gray;
+  font-weight: normal;
+}
+.vision-box:hover
+{
+  border: 1px solid white;
+  box-shadow: 0 0 5px  white;
+}
+
+/*--------------------------------------------project-------------------------------------------------*/
+.project-overall-box
+{
+    min-height: 100vh;
+    width: 100%;
+    text-align: center;
+    padding-top: 20px;
+    color: white;
+    background-color:rgb(1, 1, 20) ;
+    padding-bottom: 20px;
+}
+.project-path
+{
+    height: 50px;
+    width:30%;
+    border: 1px solid blueviolet;
+    border-radius: 25px;
+    margin: auto;
+    display: flex;
+    justify-content: space-evenly;
+}
+.path 
+{
+    height: 50px;
+    min-width: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    border-right: 1px solid blueviolet;
+    /* background-color: red; */
+}
+.path a
+{
+    text-decoration: none;
+    color: blueviolet;
+    font-size: 15px;
+
+}
+.path-3
+{
+    border-right: none;
+}
+.project-box
+{
+    min-height: 400px;
+    width: 85%;
+    margin: auto;
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 20px;
+    /* border: 1px solid white; */
+}
+.project
+{
+    height: 400px;
+    width: 300px;
+    border-radius: 10px;
+    padding: 10px;
+    background-color:rgb(9, 11, 32); 
+    /* border: 1px solid white; */
+    color: white;
+    overflow: hidden;
+    text-align: left;
+}
+.project img
+{
+    height: 150px;
+    width: 100%;
+    border-radius: 10px;
+
+}
+.project-domain
+{
+    height: 50px;
+    width: 100%;
+    display: flex;
+    column-gap: 5px;
+    padding-top: 10px;
+    /* border: 1px solid red; */
+}
+.domain-name
+{
+    height: 30px;
+    min-width: 60px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    background-color: rgba(71, 69, 69, 0.329);
+    color: blueviolet;
+}
+.project p
+{
+    color: gray;
+}
+.project-content
+{
+    height: 70px;
+    width: 100%;
+    overflow: hidden;
+    color: gray;
+    /* border: 1px solid blue; */
+
+}
+.viewmore-box
+{
+    height: 30px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-between;
+    color:rgb(24, 132, 204) ;
+    font-weight: bold;
+    /* background-color: yellow; */
+}
+.checkbox
+{
+    opacity: 0;
+}
+.project label
+{
+    width: 150px;
+    cursor: pointer;
+}
+
+.project:hover
+{
+    transition: 1s;
+    transform: scale(1.1);
+    box-shadow: 0 0 10px gray;
+}
+/* ----------------------------------------education start------------------------------------ */
+.education-overall-box
+{
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(to right,rgb(82, 9, 57) ,rgb(4, 4, 37));
+    text-align: center;
+    padding-top: 30px;
+    color: white;
+    padding-bottom: 25px;
+}
+.education-box
+{
+    min-height: 80vh;
+    width: 50%;
+    /* border: 1px solid white; */
+    border-left: 2px solid blueviolet;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: start;
+    row-gap: 30px;
+    padding-left: 20px;
+    animation: verticalline;
+    transition: 1s;
+    animation-duration: 3s;
+}
+.education-details-box
+{
+    min-height: 300px;
+    width: 90%;
+    border: 1px solid blueviolet;
+    border-radius: 10px;
+    text-align: left;
+    padding: 10px 10px 10px 20px;
+    position: relative;
+    animation-name:education-box;
+    animation-duration: 3s;
+    transition: 1s;
+}
+.education-details-box::before
+{
+    content: '';
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    position: absolute;
+    top: -3px;
+    left: -32px;
+    border: 3px solid mediumvioletred;
+    background-color:rgb(5, 5, 54);   
+}
+.education-overall-box p
+{
+    color: gray;
+}
+.education-details-box p
+{
+    margin-top: -5px;
+}
+.education-details-box h6 span
+{
+    color: gray;
+}
+
+
+/* ----------------------------------------contact start--------------------------------------- */
+.contact-overall-box
+{
+    min-height: 110vh;
+    width: 100%;
+    /* background-image: linear-gradient(45deg,rgb(255, 18, 255),rgb(94, 47, 141)); */
+    background-image: linear-gradient(to right,rgb(82, 9, 57) ,rgb(4, 4, 37));
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+form
+{
+    min-height: 400px;
+    width: 55%;
+    background-color: rgb(1, 1, 20);
+    /* background-image: linear-gradient(to right,rgb(82, 9, 57) ,rgb(4, 4, 37)); */
+    border-radius: 20px;
+    margin: auto;
+    padding: 20px;
+    text-align: left;
+}
+input
+{
+    height: 60px;
+    width: 100%;
+    background:none;
+    border: none;
+    border: 2px solid gray;
+    color: white;
+    border-radius: 10px;
+    margin-top: 10px;
+}
+textarea
+{
+    height: 150px;
+    width: 100%;
+    background: none;
+    border: 2px solid gray;
+    color: white;
+    border-radius: 10px;
+    margin-top: 10px;
+    resize: none;
+}
+form button
+{
+    height: 50px;
+    width: 25%;
+    border: none;
+    border-radius: 10px;
+    /* background-image: linear-gradient(to right,rgb(145, 52, 145),rgb(94, 47, 141)); */
+    background-image: linear-gradient(to right,rgb(82, 9, 57) ,rgb(4, 4, 37));
+    color: white;
+    font-size: 20px;
+    margin-top: 10px;
+}
+form button:hover
+{
+    border: 1px solid gray;
+    box-shadow: 0 0 5px gray;
+}
+/* ----------------------------------------------footer------------------------------------------ */
+.footer
+{
+    min-height:40vh;
+    width: 100%;
+    background-color: rgb(1, 1, 20); 
+    text-align: center;
+    color: white;
+    padding-top:50px;
+}
+.footer h5
+{
+    color: blueviolet;
+}
+.footer-path
+{
+    min-height: 50px;
+    width: 40%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    /* border: 1px solid white; */
+}
+.footer-path a
+{
+    text-decoration:none;
+    color: white;
+}
+.footer-icon
+{
+ margin-top: 10px;
+}
+.footer-path i
+{
+    font-size: 25px;
+    cursor: pointer;
+}
+.footer p
+{
+    margin-top: 30px;
+
+}
+.footer-path i:hover
+{
+    transition: all 1s;
+    transform: scale(1.3);
+}
+.fa-whatsapp:hover
+{
+    color:lime;
+}
+.fa-linkedin:hover
+{
+    color:blue;
+}
+.fa-instagram:hover
+{
+    background-image:linear-gradient(yellow,red);
+    background-clip: text;
+    color: transparent;
+}
+.fa-envelope:hover
+{
+    color: red;
+}
+.fa-phone:hover
+{
+    color: slateblue;
+}
+
+/* -------------------------------------------------END------------------------------------------------------- */
+/* ----------------------------------------------------------------------------------------------------------- */
+/* ----------------------------------------------------------------------------------------------------------- */
+
+@media only screen and (min-width:300px) and (max-width:600px)
+{
+    /* -------------------------nav----------------------------- */
+    .navbar 
+    {
+        padding: 0;
+    }
+    .navbar-dark .navbar-toggler
+    {
+        border: none;
+    }
+    .navbar-dark.navbar-toggler-icon
+    {
+        color: white !important;
+    }
+    /* -------------------------about------------------------------- */
+    .about
+    {
+        flex-direction: column-reverse;
+    }
+    .about-content-box
+    {
+        width: 100%;
+        text-align: center;
+        padding: 10px;
+    }
+    .full-stack
+    {
+        flex-direction: column;
+    }
+    .type-writer
+    {
+        margin: auto;
+    }
+    .about-img-box
+    {
+        height:60vh;
+        width: 100%;
+        display: flex;
+        justify-content:center;
+        align-items: center;
+    }
+    .about-img-box img
+    {
+        height: 300px;
+        width: 500px;
+    }
+    .top-up
+    {
+        height: 40px;
+        width: 40px;
+    }
+    .top-up i
+    {
+        font-size: 25px;
+    }
+    /* -----------------------------skill start---------------------------------------------- */
+    .skill-overall-box
+    {
+        flex-direction: column;
+    }
+    .skill-box
+    {
+    width: 80%;
+    }
+    .frontend-skills
+    {
+        padding: 10px;
+        gap: 20px;
+    }
+    /* -----------------------------visionar start---------------------------------------------- */
+    .vision-overall-box
+    {
+        min-height: 145vh;
+        padding: 20px 10px 0 10px;
+    }
+    .visionary
+    {
+        flex-direction: column;
+        width: 100%;
+    }
+    .vision-center-line-1,.vision-center-line-2
+    {
+        min-height: 320px;
+        width: 100%;
+        border: none;
+    }
+    .vision-center-line-1
+    {
+        padding-bottom: 20px;
+        padding-right: 0;
+    }
+    .vision-center-line-2
+    {
+        padding-bottom: 20px;
+        padding-left: 0;
+    }
+    .vision-box
+    {
+        width: 100%;
+        position: relative;
+    }
+    .vision-box-1::after,.vision-box-2::before
+    {
+       display: none;
+    }
+
+
+    /* ------------------------------project--------------------------------------------------- */
+    .project-overall-box
+    {
+        padding: 5px;
+    }
+
+    .project-path
+    {
+        width: 100%;
+    }
+    .path
+    {
+        padding: 5px;
+    }
+    /* ---------------------------------Education------------------------------------------- */
+    .education-box
+    {
+        width: 90%;
+    }
+    .education-details-box
+    {
+        width: 100%;
+    }
+    /* ---------------------------------contact--------------------------------------------- */
+    .contact-overall-box
+    {
+        padding: 10px;
+    }
+    form
+    {
+        width: 100%;
+    }
+    /* ---------------------------------footer---------------------------------------------- */
+    .footer-path
+    {
+        width: 90%;
+    }
+}
+/* --------------------------------------------------------------------------------------------------------- */
+/* --------------------------------------------------------------------------------------------------------- */
+/* --------------------------------------------------------------------------------------------------------- */
+@media only screen and (min-width:600px) and (max-width:1440px) 
+{
+    .home
+    {
+
+        padding: 20px;
+        
+    }
+    .about-content-box
+    {
+        width: 60%;
+    }
+    .project-path
+    {
+        width: 45%;
+    }
+    .education-box
+    {
+        width: 60%;
+    } 
+}
+/* --------------------------------------------------------------------------------------------------------- */
+/* --------------------------------------------------------------------------------------------------------- */
+/* --------------------------------------------------------------------------------------------------------- */
+@keyframes typing
+{
+    from
+    {
+      width: 0;
+    }
+
+}
+@keyframes blink
+{
+    50%
+    {
+        border-color: transparent;
+    }
+}
+
+
+@keyframes top-up 
+{
+    0%
+    {
+        bottom: 110%;
+        opacity: 0;
+    }
+    100%
+    {
+        bottom: 0;
+        opacity: 1;
+    }
+    
+}
+
+/* ------------------------------------------visionary------------------------------------ */
+@keyframes pointball-1
+{
+    from
+    {
+        top: -5px;
+    }
+    to
+    {
+        top: 200%;
+    }
+    
+}
+@keyframes pointball-2 
+{
+    from
+    {
+        bottom: -5px;
+
+    }
+    to
+    {
+        bottom: 200%;
+    }
+    
+}
+
+
+
+
+/* ----------------------------------------education------------------------------------- */
+
+@keyframes education-box
+{
+    0%
+    {
+       margin-left: 100%;
+       opacity: 0;
+    }
+    100%
+    {
+        margin-left: 0%;
+        opacity: 1;
+    }
+    
+}
+@keyframes verticalline 
+{
+    0%
+    {
+        opacity: 0;
+    }
+    100%
+    {
+        opacity: 1;
+    }
+    
+}
